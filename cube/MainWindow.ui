@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>600</width>
+    <height>800</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>600</width>
+    <height>800</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>600</width>
+    <height>800</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>俄罗斯方块</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true"/>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <layout class="QHBoxLayout" name="horizontalLayout_2">
+    <item>
+     <layout class="QVBoxLayout" name="verticalLayout_2">
+      <item>
+       <widget class="QWidget" name="stage" native="true">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>311</width>
+          <height>621</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>311</width>
+          <height>621</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QWidget
+{
+	border:1px solid #000;
+	background-color:#000;
+}</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <layout class="QVBoxLayout" name="verticalLayout">
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout">
+        <item>
+         <widget class="QLabel" name="label_2">
+          <property name="text">
+           <string>Next is-------&gt;</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QWidget" name="Tip" native="true">
+          <property name="minimumSize">
+           <size>
+            <width>125</width>
+            <height>125</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>125</width>
+            <height>125</height>
+           </size>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">border:1px solid #000;
+background-color:#000;</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <widget class="QLabel" name="Score">
+        <property name="text">
+         <string>          click start！</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="Level">
+        <property name="text">
+         <string>How to play?
+W-&gt;旋转
+A-&gt;左移
+D-&gt;右移
+S-&gt;下落</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="bg">
+        <property name="minimumSize">
+         <size>
+          <width>255</width>
+          <height>453</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-image: url(:/bg.png);</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <spacer name="verticalSpacer">
+        <property name="orientation">
+         <enum>Qt::Vertical</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>20</width>
+          <height>40</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item>
+       <widget class="QOpenGLWidget" name="openGLWidget"/>
+      </item>
+      <item>
+       <widget class="QPushButton" name="StartGame">
+        <property name="text">
+         <string>start！</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="label">
+        <property name="text">
+         <string>        made by 03 449</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections/>
+</ui>
